@@ -180,21 +180,106 @@ body {
 
 /*--- Main Slider --*/
 #main-slider {
+    position:relative;
 
 }
 
 .slider-wrapper {
-    background-color: #000000;
-    opacity: 0.65;
+    background-color: rgba(0,0,0, 0.65);
 }
 
-.container-wrapper {
-    background-color: black;
-    opacity: 0.4;
+.top {
+    background-color: rgba(0,0,0,0.4);
     position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
+    text-align: right;
+}
+
+.item {
+    position:relative;
+    overflow: hidden;
+}
+
+.mask {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#singleImageCarousel .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.welcome h3 {
+    display: inline-block;
+    position: relative;
+    font-family: "Raleway-Regular";
+    font-size: 22px;
+    line-height: 22px;
+    padding: 6px 30px;
+}
+
+.decorator {
+    position: absolute;
+    height: 3px;
+    width: 32px;
+}
+
+.decorator.pre-icon:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
+
+.decorator.pre-icon:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #ffc908;
+    position: absolute;
+    bottom: 0;
+}
+
+.decorator.post-icon:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #ffc908;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.decorator.post-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 32px;
+    height: 1px;
+    background-color: white;
+}
+
+.decorator.pre-icon {
+    left:0;
+    top: 0;
+}
+
+.decorator.post-icon {
+    bottom: 0;
+    right: 0;
 }
 
 /*--- LOGIN FORM --*/
@@ -204,8 +289,13 @@ body {
 .welcome {
     color: white;
     position: absolute;
-    top: 30%;
-
+    top: 236px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    max-width: 860px;
+    text-align: center;
 }
 /*--- NAVIGATION --*/
 .navbar-inverse {
