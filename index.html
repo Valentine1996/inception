@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Stemcell Clinik</title>
+        <title>Inception</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,7 +27,7 @@
         <section id="main-slider">
             <div class="top">
                 <div class="container">
-                    <form action="/">
+                    <form action="/" id="login-form">
                         <input type="text" id="username" name="username" placeholder="Username :">
                         <input type="password" id="password" name="password" placeholder="Password :">
                         <button id="login">LOGIN</button>
@@ -80,28 +80,28 @@
     <div id="available-courses">
         <div class="container">
             <div class="available-courses text-center">
-                <h1>AVAILABLE COURSES</h1>
+                <h2><i class="pre-icon decorator"></i>AVAILABLE COURSES<i class="post-icon decorator"></i></h2>
             </div>
         </div>
     </div>
     <div id="forthImageCarousel" class="owl-carousel owl-theme">
         <div>
-            <img src="img/animup2.jpg">
+            <img src="img/animup2.jpg" alt="">
         </div>
         <div>
-            <img src="img/layer-29.jpg">
+            <img src="img/layer-29.jpg" alt="">
         </div>
         <div>
-            <img src="img/art-6.jpg">
+            <img src="img/art-6.jpg" alt="">
         </div>
         <div>
-            <img src="img/layer-28.jpg">
+            <img src="img/layer-28.jpg" alt="">
         </div>
         <div>
-            <img src="img/layer-29.jpg">
+            <img src="img/layer-29.jpg" alt="">
         </div>
         <div>
-            <img src="img/art-6.jpg">
+            <img src="img/art-6.jpg" alt="">
         </div>
     </div>
     <div class="view-all text-center">
@@ -111,10 +111,10 @@
         <div class="container">
             <div class="text-center content">
                 <h1>
-                    ABOUT SITE
+                    ABOUT
                 </h1>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus luctus ultrices posuere cubilia Curae
+                    <i class="pre-icon decorator"></i>Vestibulum ante ipsum primis in faucibus luctus ultrices posuere cubilia Curae<i class="post-icon decorator"></i>
                 </p>
             </div>
         </div>
@@ -124,45 +124,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div>
-                        <img src="img/furfur.png">
-                    </div>
-                    <div>
-                        <h2>SEACRH FORUMS</h2>
-                        <input type="text" id="search" name="search">
-                        <button>GO</button>
-                        <a href="#!">Advanced Search</a>
+                    <div class="content">
+                        <div class="img-layout">
+                            <img src="img/furfur.png" alt="">
+                        </div>
+                        <div>
+                            <h2>SEACRH FORUMS</h2>
+                            <form id="searching" action="/">
+                                <div class="text-center">
+                                    <input type="text" id="search" name="search">
+                                </div>
+                                <div class="act-layer">
+                                    <button>GO</button> <a href="#!">Advanced Search?</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div>
-                        <img src="img/book.jpg">
-                    </div>
-                    <div>
-                        <h2>COURSES</h2>
-                        <p>
-                            Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                        </p>
+                    <div class="content">
+                        <div class="img-layout">
+                            <img src="img/book.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2>COURSES</h2>
+                            <p>
+                                Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                            </p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="col-md-3">
-                    <div>
-                        <img src="img/file-icon.jpg">
+                    <div class="content">
+                        <div class="img-layout">
+                            <img src="img/file-icon.jpg" alt="">
+                        </div>
+                        <h2>LATEST NEWS</h2>
+                        <p>
+                            Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                        </p>
                     </div>
-                    <h2>LATEST NEWS</h2>
-                    <p>
-                        Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                    </p>
                 </div>
                 <div class="col-md-3">
-                    <div>
-                        <img src="img/calendar-icon.png">
+                    <div class="content">
+                        <div class="img-layout">
+                            <img src="img/calendar-icon.png" alt="">
+                        </div>
+                        <h2>UPCOMING EVENTS</h2>
+                        <p>
+                            Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                        </p>
                     </div>
-                    <h2>UPCOMING EVENTS</h2>
-                    <p>
-                        Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                    </p>
                 </div>
             </div>
         </div>
@@ -276,7 +289,7 @@
             nav: true,
             navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
             items: 4,
-            loop: true
+            dots: false
         });
     </script>
 </html>

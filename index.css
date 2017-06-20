@@ -159,7 +159,7 @@ img {
     url('/fonts/Raleway/Raleway-Medium.ttf') format('truetype'),
     url('/fonts/Raleway/Raleway-Medium.svg#Raleway-Medium') format('svg'),
     url('/fonts/Raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -188,6 +188,7 @@ body {
     background-color: rgba(0,0,0, 0.65);
 }
 
+/*--- Login Form --*/
 .top {
     background-color: rgba(0,0,0,0.4);
     position: absolute;
@@ -195,6 +196,27 @@ body {
     z-index: 100;
     width: 100%;
     text-align: right;
+    padding: 10px 0 10px 0;
+}
+
+.top #login-form input {
+    background-color: transparent;
+    height: 30px;
+    width: 220px;
+    margin: 0 5px 0 5px;
+    padding: 7px 0 10px 7px;
+    border: 1px solid #939393;
+}
+
+.top #login-form button {
+    font-family: "PT Sans";
+    padding: 0 15px 0 15px;
+    background-color: #ffc908;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: normal;
+    color: white;
+    border: 0;
 }
 
 .item {
@@ -213,8 +235,24 @@ body {
 
 #singleImageCarousel .owl-dots {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     width: 100%;
+}
+
+#singleImageCarousel .owl-dots .owl-dot.active span {
+     background-color: #ffc908;
+ }
+
+.welcome {
+    color: white;
+    position: absolute;
+    top: 236px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    max-width: 860px;
+    text-align: center;
 }
 
 .welcome h3 {
@@ -226,10 +264,33 @@ body {
     padding: 6px 30px;
 }
 
+.welcome h2 {
+    font-family: "Raleway-Light";
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.welcome h1 {
+    font-family: "Raleway-Light";
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 45px;
+}
+
 .decorator {
     position: absolute;
     height: 3px;
     width: 32px;
+}
+
+.decorator.pre-icon {
+    left:0;
+    top: 0;
+}
+
+.decorator.post-icon {
+    bottom: 0;
+    right: 0;
 }
 
 .decorator.pre-icon:before {
@@ -262,6 +323,7 @@ body {
     top: 0;
     right: 0;
 }
+
 .decorator.post-icon:after {
     content: "";
     display: block;
@@ -272,32 +334,10 @@ body {
     background-color: white;
 }
 
-.decorator.pre-icon {
-    left:0;
-    top: 0;
-}
-
-.decorator.post-icon {
-    bottom: 0;
-    right: 0;
-}
-
-/*--- LOGIN FORM --*/
-.login-form {
-}
-
-.welcome {
-    color: white;
-    position: absolute;
-    top: 236px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: block;
-    max-width: 860px;
-    text-align: center;
-}
 /*--- NAVIGATION --*/
+.navbar {
+    margin: 10px 0;
+}
 .navbar-inverse {
     background-color: white;
     border-color: white;
@@ -305,33 +345,139 @@ body {
 
 #myNavbar ul li a {
     font-size: 14px;
-    font-weight: 500;
     line-height:17px;
     font-family: "Raleway-Medium";
     color: black;
 }
 
-.current {
+#myNavbar ul li a.current {
     color: #ffc908;
 }
-
-
 
 #available-courses {
     background-image: url("/img/bitmap.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 33px 0 28px 0;
 }
 
-.available-courses h1 {
+.available-courses h2 {
     font-family: "Raleway-Regular";
     font-size: 26px;
     line-height: 34px;
     color: #ffc908;
+    position: relative;
+    display: inline-block;
+    padding: 12px 25px;
 }
+
+/*--- Forth image carousel --*/
+div#forthImageCarousel .owl-stage{
+
+}
+
+div#forthImageCarousel .owl-prev {
+    position: absolute;
+    top: 33%;
+    left: 20px;
+}
+
+div#forthImageCarousel .owl-next {
+    position: absolute;
+    top: 33%;
+    right: 20px;
+}
+
 
 .view-all {
     line-height: 22px;
     color: #868686;
     padding: 55px 0 40px 0;
+    border-bottom: solid 1px #eeeeee;
+}
+
+/*--- SECTION: ABOUT ---*/
+#about {
+    margin: 90px 0 75px 0;
+}
+
+#about .content h1 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 30px;
+}
+
+#about .content h1:after {
+    display: inline;
+    content: " SITE";
+    color: #ffc907;
+}
+
+#about .content p {
+    position: relative;
+    display: inline-block;
+    font-family: "Raleway-Regular";
+    font-size: 20px;
+    line-height: 24px;
+    color: #878787;
+}
+
+/*--- SECTION: ACTIONS ---*/
+#actions .content {
+    border: 1px solid #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#actions .content .img-layout {
+    margin: 45px;
+    text-align: center;
+}
+
+#actions .content h2 {
+    font-family: "Raleway-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#actions .content p {
+    color: #868686;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#actions input#search {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+form#searching .act-layer {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+form#searching button {
+    float: left;
+    padding: 5px 12px;
+    background-color: black;
+    color: white;
+    font-family: "Raleway-Medium";
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+form#searching a {
+    float: right;
+    display: inline-block;
+    margin: 8px 0;
+    font-family: "Raleway-Medium";
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
 }
