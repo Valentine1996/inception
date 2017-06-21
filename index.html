@@ -183,31 +183,41 @@
     <section id="aim">
         <div class="container">
             <div class="content">
-                <ul>
-                    <li>
-                        OUR COURSES
-                    </li>
-                    <li>
-                        WHAT WE DO
-                    </li>
-                </ul>
-                <p>
-                    Pellentesque sodales quam in nunc. Suspen disse commodo suscipit nisi. Aliquma mal enim.Donec quis velit
-                    id neque euismod tincidunt. Nam posuere, orci in eleded mentum molestie, purus erat volutpat duil eu ullamcorper
-                    elit purus non dl odiogu Donec la diam ut nunc tempor ornare. In ornare nisi vitae massa. Phasellus mauris massa,
-                    semper quis auctor id, faucibus egestas leo. Fusce lobortis lectus malesuada dictum dictum.
-                    Fusce vehicula aliquam justo ac iaculis.
-                </p>
-                <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin rutrum,
-                    tortor adipiscing euismod pretium, tellus felis adipiscing nulla, ac iaculis mi magna quis lacus.
-                    Donec vestibulum neque et urna mollis, ut tempus lacus mattis. Donec id nisl lorem. Morbi felis nisi,
-                    pretium eu mauris vitae, convallis accumsan nisl. Aliquam id tortor consequat dui interdum mattis
-                    tincidunt ullamcorper est.
-                </p>
-                <button id="read-more">
-                    READ MORE
-                </button>
+                <div class="tab">
+                    <button class="tablinks link-active" onclick="openTabContent(event,'tab1')">OUR COURSES</button>
+                    <button class="tablinks" onclick="openTabContent(event,'tab2')">WHAT WE DO</button>
+                </div>
+                <div id="tab1" class="tabcontent content-active">
+                    <p>
+                        Pellentesque sodales quam in nunc. Suspen disse commodo suscipit nisi. Aliquma mal enim.Donec quis velit
+                        id neque euismod tincidunt. Nam posuere, orci in eleded mentum molestie, purus erat volutpat duil eu ullamcorper
+                        elit purus non dl odiogu Donec la diam ut nunc tempor ornare. In ornare nisi vitae massa. Phasellus mauris massa,
+                        semper quis auctor id, faucibus egestas leo. Fusce lobortis lectus malesuada dictum dictum.
+                        Fusce vehicula aliquam justo ac iaculis.
+                    </p>
+                    <p>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin rutrum,
+                        tortor adipiscing euismod pretium, tellus felis adipiscing nulla, ac iaculis mi magna quis lacus.
+                        Donec vestibulum neque et urna mollis, ut tempus lacus mattis. Donec id nisl lorem. Morbi felis nisi,
+                        pretium eu mauris vitae, convallis accumsan nisl. Aliquam id tortor consequat dui interdum mattis
+                        tincidunt ullamcorper est.
+                    </p>
+                    <button class="read-more">
+                        READ MORE
+                    </button>
+                </div>
+                <div id="tab2" class="tabcontent content-hidden">
+                    <p>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin rutrum,
+                        tortor adipiscing euismod pretium, tellus felis adipiscing nulla, ac iaculis mi magna quis lacus.
+                        Donec vestibulum neque et urna mollis, ut tempus lacus mattis. Donec id nisl lorem. Morbi felis nisi,
+                        pretium eu mauris vitae, convallis accumsan nisl. Aliquam id tortor consequat dui interdum mattis
+                        tincidunt ullamcorper est.
+                    </p>
+                    <button class="read-more">
+                        READ MORE
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -276,20 +286,5 @@
         </div>
     </section>
 </body>
-    <script>
-        $(document).ready(function(){
-            $("#singleImageCarousel").owlCarousel({
-                items: 1,
-                singleItem: true,
-                loop: true
-            });
-        });
-
-        $("#forthImageCarousel").owlCarousel({
-            nav: true,
-            navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
-            items: 4,
-            dots: false
-        });
-    </script>
+    <script src="js/engine.js"></script>
 </html>

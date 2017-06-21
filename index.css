@@ -481,3 +481,57 @@ form#searching a {
     line-height: 22px;
     color: black;
 }
+
+/*--- SECTION: AIM --*/
+#aim {
+    margin-top: 115px;
+    margin-bottom: 75px;
+}
+
+#aim .tab {
+    margin-bottom: 20px;
+}
+#aim .content .tab button {
+    font-family: "Raleway-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-right: 1px solid #dddddd;;
+}
+
+#aim .content .tab button:last-child {
+    border-right: none;
+}
+
+/*--- tab content --*/
+#aim .content .tabcontent p {
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0;
+    color: #888888;
+}
+
+.tab .link-active {
+    color: #ffc908;
+}
+
+.tabcontent.content-hidden {
+    display: none;
+}
+
+.tabcontent.content-active {
+    display: block;
+}
+
+button.read-more {
+    background-color: #ffc908;
+    border: none;
+    font-family: "Raleway-Medium";
+    line-height: 17px;
+    color: white;
+    margin-top: 30px;
+    padding: 15px 25px;
+}
