@@ -164,6 +164,30 @@ img {
 }
 
 /*--- main Styles --*/
+
+/*--- Common titles --*/
+.content .composite-title h1.bigtitle-1part {
+    font-size: 52px;
+    line-height: 62px;
+    display: inline-block;
+}
+
+.content .composite-title h1.bigtitle-2part {
+    font-size: 52px;
+    line-height: 62px;
+    display: inline-block;
+    color: #ffc907;
+}
+
+.content .composite-title p.composite-title-description {
+    position: relative;
+    display: inline-block;
+    font-family: "Raleway-Regular";
+    font-size: 20px;
+    line-height: 24px;
+    color: #878787;
+}
+
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
@@ -401,16 +425,8 @@ div#forthImageCarousel .owl-next {
     margin: 90px 0 75px 0;
 }
 
-#about .content h1 {
-    font-size: 52px;
-    line-height: 62px;
+#about .composite-title {
     margin-bottom: 30px;
-}
-
-#about .content h1:after {
-    display: inline;
-    content: " SITE";
-    color: #ffc907;
 }
 
 #about .content p {
@@ -534,4 +550,91 @@ button.read-more {
     color: white;
     margin-top: 30px;
     padding: 15px 25px;
+}
+
+/*--- SECTION: feedbacks --*/
+#feedbacks {
+    background-color: #f0f0f0;
+    padding: 50px 0 0 0;
+}
+#feedbacks .content .title {
+    font-family: "Raleway-Regular";
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 60px;
+}
+
+#feedbacks .content .feedback {
+    margin:0 0 65px 0;
+}
+
+#feedbacks .content .feedback .feedback-text {
+    background-color: white;
+    font-family: "Raleway-Regular";
+    line-height: 22px;
+    color: #878787;
+    padding: 35px 45px 35px 45px;
+    text-align: center;
+}
+
+#feedbacks .content .feedback .author {
+    overflow: hidden;
+    padding: 20px 5px 0 15px;
+}
+
+#feedbacks .content .feedback .author .image {
+    float: left;
+}
+
+#feedbacks .content .feedback .author .details {
+    float: left;
+    margin: auto;
+    padding: 20px 0 0 15px;
+}
+
+#feedbacks .content .feedback .author .details h3 {
+    font-family: "Raleway-Medium";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#feedbacks .content .feedback .author .details p {
+    font-family: "Raleway-Regular";
+    font-size: 12px;
+    line-height: 17px;
+    color: #878787;
+}
+
+#feedbacks .content .feedback .author .rating {
+    float: right;
+    padding-top: 40px;
+}
+
+#feedbacks .content .feedback .author .rating .star-yellow {
+    background: url("img/star-yellow.png") no-repeat;
+    background-size: cover;
+    height: 15px;
+    width: 16px;
+    display: inline-block;
+}
+
+#feedbacks .content .feedback .author .rating .star-grey {
+    background: url("img/star-grey.png") no-repeat;
+    background-size: cover;
+    height: 15px;
+    width: 16px;
+    display: inline-block;
+}
+
+#feedbacks .navigation-layout {
+    height: 100px;
+    background-color: #494949;
+}
+
+/*--- SECTION: categories --*/
+#categories {
+    padding: 115px 0 0 0;
+}
+#categories .content .composite-title {
+    margin-bottom: 30px;
 }

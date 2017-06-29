@@ -11,6 +11,10 @@ $(document).ready(function(){
             items: 4,
             dots: false
         });
+
+        $("#feedback-carousel").owlCarousel({
+            items: 1
+        });
     }
 );
 
