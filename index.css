@@ -114,6 +114,10 @@ button:hover,
                opacity: 0.8;
            }
 
+button:focus {
+    outline: none;
+}
+
 strong {
     font-weight: 500;
 }
@@ -464,6 +468,75 @@ div#forthImageCarousel .owl-next {
     overflow: hidden;
 }
 
+#actions .img-container {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#actions .img-container .wrapper {
+    padding: 1px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+#actions .img-container i {
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    top: 4px;
+    text-align: center;
+    color: #000;
+    -webkit-transition: all 0.3s cubic-bezier(0.13, 0.71, 0.32, 0.94) 0s;
+    transition: all 0.3s cubic-bezier(0.13, 0.71, 0.32, 0.94) 0s;
+}
+
+#actions .img-container i:hover {
+    background-color: #ffd400;
+    color: #fff;
+}
+#actions .img-container i:hover:before {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+}
+
+#actions .img-container i:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#actions form .input-group {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#actions form .input-group input[type='submit'] {
+    float: left;
+    display: inline-block;
+}
+
+#actions form .input-group a.advanced {
+    float: right;
+    display: inline-block;
+}
+
 form#searching .act-layer {
     overflow: hidden;
     margin-bottom: 25px;
@@ -635,41 +708,48 @@ button.read-more {
     margin-bottom: 30px;
 }
 
-#categories .custom-row {
+.gallery-wrappper {
     display: block;
-    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
-#categories .custom-row .custom-col {
+.gallery-wrappper .custom-row {
+    display: block;
+    oveflow:hidden
+}
+
+.gallery-wrappper .custom-row .custom-col {
     width: 25%;
     float: left;
     position: relative;
     display: inline-block;
-    height: auto;
 }
 
-#categories .custom-row .custom-col .category1 {
-    background: url("img/category1.jpg") no-repeat;
-    background-size: cover;
-    height: 250px;
+.gallery-wrappper .custom-row .custom-col .item {
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 
-#categories .custom-row .custom-col .category2 {
-    background: url("img/category2.jpg") no-repeat;
-    background-size: cover;
-    height: 250px;
+.gallery-wrappper .custom-row .custom-col .item .hover-content {
+    position: absolute;
+    bottom: -100px;
+    left: 10px;
+    right: 10px;
+    background-color: #ffc908;
+    color: #fff;
+    padding: 20px 15px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
 
-#categories .custom-row .custom-col .category3 {
-    background: url("img/category3.jpg") no-repeat;
-    background-size: cover;
-    height: 250px;
+.gallery-wrappper .custom-row .custom-col .item:hover .hover-content {
+    bottom: 10px;
 }
 
-#categories .custom-row .custom-col .category4 {
-    background: url("img/category4.jpg") no-repeat;
-    background-size: cover;
-    height: 250px;
+.gallery-wrappper .custom-row .custom-col .item > img {
+    display: block;
 }
 
 /*--- SECTION: upcoming --*/
