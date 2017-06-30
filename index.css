@@ -179,7 +179,7 @@ img {
     color: #ffc907;
 }
 
-.content .composite-title p.composite-title-description {
+.content p.composite-title-description {
     position: relative;
     display: inline-block;
     font-family: "Raleway-Regular";
@@ -199,6 +199,7 @@ body {
     background-color: white;
     font-family: "Raleway-Regular";
     font-size: 14px;
+    line-height: 22px;
     color: black;
 }
 
@@ -429,15 +430,6 @@ div#forthImageCarousel .owl-next {
     margin-bottom: 30px;
 }
 
-#about .content p {
-    position: relative;
-    display: inline-block;
-    font-family: "Raleway-Regular";
-    font-size: 20px;
-    line-height: 24px;
-    color: #878787;
-}
-
 /*--- SECTION: ACTIONS ---*/
 #actions .content {
     border: 1px solid #eeeeee;
@@ -635,6 +627,107 @@ button.read-more {
 #categories {
     padding: 115px 0 0 0;
 }
+
+#categories .content {
+    padding: 0 0 70px 0;
+}
 #categories .content .composite-title {
     margin-bottom: 30px;
+}
+
+#categories .custom-row {
+    display: block;
+    overflow: hidden;
+}
+
+#categories .custom-row .custom-col {
+    width: 25%;
+    float: left;
+    position: relative;
+    display: inline-block;
+    height: auto;
+}
+
+#categories .custom-row .custom-col .category1 {
+    background: url("img/category1.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+#categories .custom-row .custom-col .category2 {
+    background: url("img/category2.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+#categories .custom-row .custom-col .category3 {
+    background: url("img/category3.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+#categories .custom-row .custom-col .category4 {
+    background: url("img/category4.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+/*--- SECTION: upcoming --*/
+#upcoming {
+    padding: 100px 0 140px 0;
+}
+
+#upcoming .content h2 {
+    font-size: 34px;
+    line-height: 40px;
+
+    text-align: center;
+}
+
+#upcoming .content .row .content {
+    padding: 60px 0 0 0;
+}
+
+#upcoming .content .row .content .image {
+    width: 100%;
+    padding: 0 15px 0 0;
+}
+
+#upcoming .content .row .content .image img {
+    float: right;
+}
+
+#upcoming .content .row .content .description p {
+    color: #868686;
+}
+
+#upcoming .content .row .content .description p:not(:first-child) {
+    color: #868686;
+    margin-top: 25px;
+}
+
+#upcoming .content .row .content .description button.read-more {
+    background-color: #ffc908;
+    border: none;
+    font-family: "Raleway-Medium";
+    line-height: 17px;
+    color: white;
+    margin-top: 45px;
+    padding: 15px 25px;
+}
+
+/*--- SECTION: customers --*/
+#customers {
+    background-color: #ffc608;
+    padding: 30px 0 30px 0;
+}
+#customers .content ul {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+}
+
+#customers .content ul li {
+    display: inline-block;
+    margin: 0 50px 0 50px;
 }

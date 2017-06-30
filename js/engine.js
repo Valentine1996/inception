@@ -8,8 +8,7 @@ $(document).ready(function(){
         $("#forthImageCarousel").owlCarousel({
             nav: true,
             navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
-            items: 4,
-            dots: false
+            items: 4
         });
 
         $("#feedback-carousel").owlCarousel({
