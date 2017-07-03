@@ -15,6 +15,8 @@ $(document).ready(function(){
         $("#feedback-carousel").owlCarousel({
             items: 1
         });
+
+        var map;
     }
 );
 
@@ -39,4 +41,17 @@ function openTabContent(evt, tabId) {
     evt.currentTarget.className +=" link-active";
 }
 
+function initMap() {
 
+    var myLatLng = {lat: -25.363, lng: 131.044};
+
+    map = new google.maps.Map(document.getElementById('map-wrapper'), {
+        center: myLatLng,
+        zoom: 12
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map
+    });
+}

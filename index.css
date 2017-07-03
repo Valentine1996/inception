@@ -949,3 +949,87 @@ button.read-more {
     display: inline-block;
     margin: 0 50px 0 50px;
 }
+
+/*--- SECTION: extra-information --*/
+#extra-information {
+    padding: 105px 0 60px 0;
+}
+
+#extra-information .content .composite-title h1 {
+    margin: 0 0 15px 0;
+}
+
+#extra-information .content .composite-title-description {
+    position: relative;
+    padding: 10px 28px;
+}
+
+#extra-information .content .composite-title-description .decorator.pre-icon:before {
+    background-color: #888888;
+}
+
+#extra-information .content .composite-title-description .decorator.post-icon:after {
+    background-color: #888888;
+}
+
+/*--- SECTION: map --*/
+#map-wrapper {
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/*--- SECTION: contacts --*/
+#contacts {
+    padding: 40px 0 40px 0;
+}
+
+#contacts .content .item {
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+}
+
+#contacts .content .item .icon-layout {
+    padding: 55px 0 30px 0;
+}
+
+#contacts .content .item .icon-layout i:before{
+    font-size: 40px;
+    line-height: 48px;
+    color: #bbbbbb;
+}
+
+#contacts .content .item .icon-info p {
+    font-family: 'Raleway-Regular';
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+#contacts .content .item .icon-info p a {
+    color: #000000;
+}
+
+#contacts .content .title-wraper {
+    clear: both;
+}
+#contacts .content .title-wraper .title {
+    position: relative;
+    display: inline-block;
+    font-family: 'Raleway-Regular';
+    font-size: 34px;
+    line-height: 41px;
+
+}
+
+#contacts .content .title-wraper .title .decorator.pre-icon:before {
+    background-color: white;
+}
+
+#contacts .content .title-wraper .title .decorator.pre-icon:after {
+    background-color: white;
+}
+
+#contacts .content .title-wraper .title .decorator.post-icon:after {
+    background-color: #888888;
+}
