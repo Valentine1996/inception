@@ -170,13 +170,13 @@ img {
 /*--- main Styles --*/
 
 /*--- Common titles --*/
-.content .composite-title h1.bigtitle-1part {
+.content .composite-title h1 {
     font-size: 52px;
     line-height: 62px;
     display: inline-block;
 }
 
-.content .composite-title h1.bigtitle-2part {
+.content .composite-title h1 span {
     font-size: 52px;
     line-height: 62px;
     display: inline-block;
@@ -226,9 +226,20 @@ body {
     width: 100%;
     text-align: right;
     padding: 10px 0 10px 0;
+    overflow: hidden;
 }
 
-.top #login-form input {
+.top #login-form .input-group {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.top #login-form .input-group input:not([type="submit"]){
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: normal;
     background-color: transparent;
     height: 30px;
     width: 220px;
@@ -237,8 +248,9 @@ body {
     border: 1px solid #939393;
 }
 
-.top #login-form button {
-    font-family: "PT Sans";
+.top #login-form  .input-group input[type="submit"] {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 0 0 5px;
     padding: 0 15px 0 15px;
     background-color: #ffc908;
     font-size: 13px;
@@ -246,6 +258,7 @@ body {
     font-weight: normal;
     color: white;
     border: 0;
+    height: 30px;
 }
 
 .item {
@@ -275,7 +288,7 @@ body {
 .welcome {
     color: white;
     position: absolute;
-    top: 236px;
+    top: 230px;
     left: 0;
     right: 0;
     margin: auto;
@@ -290,7 +303,7 @@ body {
     font-family: "Raleway-Regular";
     font-size: 22px;
     line-height: 22px;
-    padding: 6px 30px;
+    padding: 13px 30px;
 }
 
 .welcome h2 {
@@ -417,23 +430,75 @@ div#forthImageCarousel .owl-next {
     right: 20px;
 }
 
+div#forthImageCarousel .item .hover-content {
+    position: absolute;
+    bottom: -150px;
+    left: 10px;
+    right: 10px;
+    background-color: #ffc908;
+    color: #fff;
+    padding: 25px 10px 25px 15px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+div#forthImageCarousel .item:hover .hover-content {
+    bottom: 10px;
+}
+
+div#forthImageCarousel .item .description {
+    float: left;
+}
+
+div#forthImageCarousel .item .icon {
+    float: right;
+}
+
+div#forthImageCarousel .item .description .title {
+    display: block;
+    font-family: 'Raleway-Regular';
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+div#forthImageCarousel .item .description .sub-title {
+    display: block;
+    font-family: 'Raleway-Regular';
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
 
 .view-all {
     line-height: 22px;
     color: #868686;
-    padding: 55px 0 40px 0;
+    padding: 30px 0 30px 0;
     border-bottom: solid 1px #eeeeee;
 }
 
 /*--- SECTION: ABOUT ---*/
 #about {
-    margin: 90px 0 75px 0;
+    margin: 90px 0 65px 0;
 }
 
 #about .composite-title {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
+#about .composite-title-description  {
+    margin-bottom: 15px;
+    padding: 12px 55px;
+}
+
+#about .composite-title-description .decorator.pre-icon:before {
+    background-color: #888888;
+}
+
+#about .composite-title-description .decorator.post-icon:after {
+    background-color: #888888;
+}
 /*--- SECTION: ACTIONS ---*/
 #actions .content {
     border: 1px solid #eeeeee;
@@ -446,15 +511,19 @@ div#forthImageCarousel .owl-next {
     text-align: center;
 }
 
-#actions .content h2 {
+#actions .content .inner-content {
+    margin: 40px 0 0 0;
+}
+
+#actions .content .inner-content h2 {
     font-family: "Raleway-Medium";
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-#actions .content p {
+#actions .content .inner-content p {
     color: #868686;
     font-size: 14px;
     line-height: 22px;
@@ -468,14 +537,14 @@ div#forthImageCarousel .owl-next {
     overflow: hidden;
 }
 
-#actions .img-container {
+#actions .wrapper {
     display: block;
     text-align: center;
     overflow: hidden;
     position: relative;
 }
 
-#actions .img-container .wrapper {
+#actions .wrapper .img-container {
     padding: 1px;
     display: inline-block;
     margin: 20px 0 0 0;
@@ -527,36 +596,27 @@ div#forthImageCarousel .owl-next {
     overflow: hidden;
 }
 
+form#searching {
+    margin-bottom: 35px;
+}
+
+
 #actions form .input-group input[type='submit'] {
     float: left;
     display: inline-block;
-}
-
-#actions form .input-group a.advanced {
-    float: right;
-    display: inline-block;
-}
-
-form#searching .act-layer {
-    overflow: hidden;
-    margin-bottom: 25px;
-}
-
-form#searching button {
-    float: left;
-    padding: 5px 12px;
+    padding: 6px 15px 5px 15px;
     background-color: black;
     color: white;
     font-family: "Raleway-Medium";
     font-size: 16px;
     line-height: 22px;
-
+    border: none;
 }
 
-form#searching a {
+#actions form .input-group a.advanced {
     float: right;
     display: inline-block;
-    margin: 8px 0;
+    margin: 11px 0 0 0;
     font-family: "Raleway-Medium";
     font-size: 15px;
     line-height: 22px;
@@ -565,7 +625,7 @@ form#searching a {
 
 /*--- SECTION: AIM --*/
 #aim {
-    margin-top: 115px;
+    margin-top: 105px;
     margin-bottom: 75px;
 }
 
@@ -580,6 +640,11 @@ form#searching a {
     border: none;
     background-color: transparent;
     border-right: 1px solid #dddddd;;
+    padding: 1px 10px 1px 6px;
+}
+
+#aim .content .tab button:first-child {
+    padding-left: 0;
 }
 
 #aim .content .tab button:last-child {
@@ -591,7 +656,7 @@ form#searching a {
     font-family: "Raleway-Regular";
     font-size: 14px;
     line-height: 22px;
-    margin: 10px 0;
+    margin: 25px 0;
     color: #888888;
 }
 
@@ -613,24 +678,47 @@ button.read-more {
     font-family: "Raleway-Medium";
     line-height: 17px;
     color: white;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 15px 25px;
 }
 
 /*--- SECTION: feedbacks --*/
 #feedbacks {
     background-color: #f0f0f0;
-    padding: 50px 0 0 0;
+    padding: 45px 0 0 0;
 }
 #feedbacks .content .title {
     font-family: "Raleway-Regular";
     font-size: 34px;
     line-height: 41px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 5px 0;
+}
+
+#feedbacks .content .title .decorator.post-icon {
+    margin: 0 -15px 0 0;
+}
+
+#feedbacks .content .title .decorator.post-icon:after {
+    background-color: #888888;
 }
 
 #feedbacks .content .feedback {
     margin:0 0 65px 0;
+}
+
+#feedback-carousel .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -60px;
+}
+
+#feedback-carousel .owl-dots .owl-dot.active span {
+    background-color: #ffc908;
 }
 
 #feedbacks .content .feedback .feedback-text {
@@ -638,13 +726,23 @@ button.read-more {
     font-family: "Raleway-Regular";
     line-height: 22px;
     color: #878787;
-    padding: 35px 45px 35px 45px;
+    padding: 32px 45px 35px 45px;
     text-align: center;
+}
+
+#feedbacks .content .feedback .bottom-decoration {
+    position: relative;
+    margin: 0 0 0 40px;
+}
+
+#feedbacks .content .feedback .bottom-decoration img {
+    height: 12px;
+    width: 22px;
 }
 
 #feedbacks .content .feedback .author {
     overflow: hidden;
-    padding: 20px 5px 0 15px;
+    padding: 20px 2px 0 20px;
 }
 
 #feedbacks .content .feedback .author .image {
@@ -655,6 +753,7 @@ button.read-more {
     float: left;
     margin: auto;
     padding: 20px 0 0 15px;
+    text-align: left;
 }
 
 #feedbacks .content .feedback .author .details h3 {
@@ -692,20 +791,34 @@ button.read-more {
 }
 
 #feedbacks .navigation-layout {
-    height: 100px;
+    height: 90px;
     background-color: #494949;
 }
 
 /*--- SECTION: categories --*/
 #categories {
-    padding: 115px 0 0 0;
+    padding: 100px 0 0 0;
+    overflow: hidden;
 }
 
 #categories .content {
     padding: 0 0 70px 0;
 }
 #categories .content .composite-title {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+#categories .content .composite-title-description {
+    position: relative;
+    padding: 12px 25px;
+}
+
+#categories .content .composite-title-description .decorator.pre-icon:before {
+    background-color: #888888;
+}
+
+#categories .content .composite-title-description .decorator.post-icon:after {
+    background-color: #888888;
 }
 
 .gallery-wrappper {
@@ -754,14 +867,24 @@ button.read-more {
 
 /*--- SECTION: upcoming --*/
 #upcoming {
-    padding: 100px 0 140px 0;
+    padding: 105px 0 140px 0;
 }
 
-#upcoming .content h2 {
+#upcoming .content h2.title {
+    position: relative;
+    display: inline-block;
     font-size: 34px;
     line-height: 40px;
-
     text-align: center;
+    padding: 15px 145px;
+}
+
+#upcoming .content h2.title .decorator.pre-icon:before {
+    background-color: #888888;
+}
+
+#upcoming .content h2.title .decorator.post-icon:after {
+    background-color: #888888;
 }
 
 #upcoming .content .row .content {
@@ -770,11 +893,16 @@ button.read-more {
 
 #upcoming .content .row .content .image {
     width: 100%;
-    padding: 0 15px 0 0;
+    overflow: hidden;
 }
 
 #upcoming .content .row .content .image img {
     float: right;
+}
+
+#upcoming .content .row .content .description {
+    padding: 0 0 0 25px;
+    color: #868686;
 }
 
 #upcoming .content .row .content .description p {
@@ -793,7 +921,7 @@ button.read-more {
     line-height: 17px;
     color: white;
     margin-top: 45px;
-    padding: 15px 25px;
+    padding: 15px 35px;
 }
 
 /*--- SECTION: customers --*/
@@ -802,8 +930,7 @@ button.read-more {
     padding: 30px 0 30px 0;
 }
 #customers .content ul {
-    width: 90%;
-    margin: auto;
+    text-align: center;
     list-style: none;
 }
 

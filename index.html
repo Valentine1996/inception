@@ -6,6 +6,7 @@
         <title>Inception</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -32,9 +33,15 @@
             <div class="top">
                 <div class="container">
                     <form action="/" id="login-form">
-                        <input type="text" id="username" name="username" placeholder="Username :">
-                        <input type="password" id="password" name="password" placeholder="Password :">
-                        <button id="login">LOGIN</button>
+                        <div class="input-group">
+                            <input type="text" id="username" name="username" placeholder="Username :">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="password" name="password" placeholder="Password :">
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" value="LOGIN">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -59,24 +66,26 @@
 
         <header>
             <div class="container">
-                <nav class="navbar navbar-inverse">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#!" class="current">HOME</a></li>
-                            <li><a href="#!">COURCES</a></li>
-                            <li><a href="#!">BLOGS</a></li>
-                            <li><a href="#!">FORUMS</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <div class="row">
+                    <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#!" class="current">HOME</a></li>
+                                <li><a href="#!">COURCES</a></li>
+                                <li><a href="#!">BLOGS</a></li>
+                                <li><a href="#!">FORUMS</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -89,23 +98,77 @@
         </div>
     </div>
     <div id="forthImageCarousel" class="owl-carousel owl-theme">
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/animup2.jpg"><img src="img/animup2.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - One</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/layer-29.jpg"><img src="img/layer-29.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - Two</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/art-6.jpg"><img src="img/art-6.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - Three</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/layer-28.jpg"><img src="img/layer-28.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - Four</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/layer-29.jpg"><img src="img/layer-29.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - Five</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="item">
             <a data-fancybox="gallery" href="img/art-6.jpg"><img src="img/art-6.jpg" alt=""></a>
+            <div class="hover-content">
+                <div class="description">
+                    <span class="title">Course - Six</span>
+                    <span class="sub-title">vehicula aliquam</span>
+                </div>
+                <div class="icon">
+                    <img src="img/open-book.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <div class="view-all text-center">
@@ -115,8 +178,7 @@
         <div class="container">
             <div class="text-center content">
                 <div class="composite-title">
-                    <h1 class="bigtitle-1part">ABOUT</h1>
-                    <h1 class="bigtitle-2part"> SITE</h1>
+                    <h1>ABOUT <span>SITE</span></h1>
                 </div>
                 <p class="composite-title-description">
                     <i class="pre-icon decorator"></i>Vestibulum ante ipsum primis in faucibus luctus ultrices posuere cubilia Curae<i class="post-icon decorator"></i>
@@ -130,61 +192,68 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="content">
-
+                        <div class="wrapper">
                             <div class="img-container">
-                                <div class="wrapper">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </div>
-                                <h2 class="title">Search Forums</h2>
-                                <div class="inner-content">
-                                    <form action="" method="get">
-                                        <div class="input-group">
-                                            <input type="text" id="search">
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="submit" id="submit">
-                                            <a href="#!" class="advanced">Advanced Search ?</a>
-                                        </div>
-                                    </form>
-                                </div>
+                                <i class="fa fa-search" aria-hidden="true"></i>
                             </div>
-
+                            <div class="inner-content">
+                                <h2 class="title">SEARCH FORUMS</h2>
+                                <form id="searching" method="get">
+                                    <div class="input-group">
+                                        <input type="text" id="search">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="submit" id="submit" value="GO">
+                                        <a href="#!" class="advanced">Advanced Search ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="content">
-                        <div class="img-layout">
-                            <img src="img/book.jpg" alt="">
+                        <div class="wrapper">
+                            <div class="img-container">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </div>
+                            <div class="inner-content">
+                                <h2 class="title">COURSES</h2>
+                                <p>
+                                    Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h2>COURSES</h2>
-                            <p>
-                                Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3">
-                    <div class="content">
-                        <div class="img-layout">
-                            <img src="img/file-icon.jpg" alt="">
-                        </div>
-                        <h2>LATEST NEWS</h2>
-                        <p>
-                            Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                        </p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="content">
-                        <div class="img-layout">
-                            <img src="img/calendar-icon.png" alt="">
+                        <div class="wrapper">
+                            <div class="img-container">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="inner-content">
+                                <h2>LATEST NEWS</h2>
+                                <p>
+                                    Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                                </p>
+                            </div>
                         </div>
-                        <h2>UPCOMING EVENTS</h2>
-                        <p>
-                            Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
-                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="content">
+                        <div class="wrapper">
+                            <div class="img-container">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                            <div class="inner-content">
+                                <h2>UPCOMING EVENTS</h2>
+                                <p>
+                                    Nam posuere, orci in elled mentum molestie puruse tvolutpat dui eu ullamcorper elit purus non dl
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,10 +302,8 @@
     </section>
     <section id="feedbacks">
         <div class="container">
-            <div class="content">
-                <h1 class="title text-center">
-                    TESTIMONIALS
-                </h1>
+            <div class="content text-center">
+                <h1 class="title">TESTIMONIALS<i class="post-icon decorator"></i></h1>
 
                 <div id="feedback-carousel" class="owl-carousel owl-theme">
 
@@ -247,6 +314,9 @@
                                     <div class="feedback-text">
                                         Nulla elementum morbi hendrerit. Integer mollis ullamcorper metus. Proin leo. Donec mattis
                                         congue Nullam libero odio, laoreet eget porttitor et auctor eget lectus.Vivamus eu
+                                    </div>
+                                    <div class="bottom-decoration">
+                                        <img src="img/triangle.png" alt="">
                                     </div>
                                     <div class="author">
                                         <div class="image">
@@ -271,6 +341,9 @@
                                     <div class="feedback-text">
                                         Nulla elementum morbi hendrerit. Integer mollis ullamcorper metus. Proin leo. Donec mattis
                                         congue Nullam libero odio, laoreet eget porttitor et auctor eget lectus.Vivamus eu
+                                    </div>
+                                    <div class="bottom-decoration">
+                                        <img src="img/triangle.png" alt="">
                                     </div>
                                     <div class="author">
                                         <div class="image">
@@ -301,6 +374,9 @@
                                         Nulla elementum morbi hendrerit. Integer mollis ullamcorper metus. Proin leo. Donec mattis
                                         congue Nullam libero odio, laoreet eget porttitor et auctor eget lectus.Vivamus eu
                                     </div>
+                                    <div class="bottom-decoration">
+                                        <img src="img/triangle.png" alt="">
+                                    </div>
                                     <div class="author">
                                         <div class="image">
                                             <img src="img/author1.png">
@@ -324,6 +400,9 @@
                                     <div class="feedback-text">
                                         Nulla elementum morbi hendrerit. Integer mollis ullamcorper metus. Proin leo. Donec mattis
                                         congue Nullam libero odio, laoreet eget porttitor et auctor eget lectus.Vivamus eu
+                                    </div>
+                                    <div class="bottom-decoration">
+                                        <img src="img/triangle.png" alt="">
                                     </div>
                                     <div class="author">
                                         <div class="image">
@@ -357,17 +436,11 @@
         <div class="container">
             <div class="content text-center">
                 <div class="composite-title">
-                    <h1 class="bigtitle-1part">
-                        OUR
-                    </h1>
-                    <h1 class="bigtitle-2part">
-                        CATEGORIES
-                    </h1>
+                    <h1>OUR <span>CATEGORIES</span><i class="post-icon decorator"></i></h1>
                 </div>
-                <p class="composite-title-description">Morbi iaculis luctus erat non blandit sed ornare urna nulla, at vehicula augue egestas</p>
+                <p class="composite-title-description"><i class="pre-icon decorator"></i>Morbi iaculis luctus erat non blandit sed ornare urna nulla, at vehicula augue egestas<i class="post-icon decorator"></i></p>
             </div>
         </div>
-
         <div class="gallery-wrappper">
             <div class="custom-row">
                 <div class="custom-col">
@@ -444,13 +517,14 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="upcoming">
         <div class="container">
             <div class="content">
-                <h2><i class="pre-icon decorator"></i>UPCOMING COURSES<i class="post-icon decorator"></i></h2>
+                <div class="text-center">
+                    <h2 class="title"><i class="pre-icon decorator"></i>UPCOMING COURSES<i class="post-icon decorator"></i></h2>
+                </div>
                 <div class="row">
                     <div class="content">
                         <div class="col-md-6">
