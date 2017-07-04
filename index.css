@@ -938,7 +938,7 @@ button.read-more {
 /*--- SECTION: customers --*/
 #customers {
     background-color: #ffc608;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 25px 0;
 }
 #customers .content ul {
     text-align: center;
@@ -952,11 +952,11 @@ button.read-more {
 
 /*--- SECTION: extra-information --*/
 #extra-information {
-    padding: 105px 0 60px 0;
+    padding: 95px 0 60px 0;
 }
 
 #extra-information .content .composite-title h1 {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
 
 #extra-information .content .composite-title-description {
@@ -989,8 +989,16 @@ button.read-more {
     border-top: 1px solid #eeeeee;
 }
 
+#contacts .content .item-left {
+    margin: 0 -15px 0 65px;
+ }
+
+#contacts .content .item-right {
+    margin: 0 65px 0 -15px;
+}
+
 #contacts .content .item .icon-layout {
-    padding: 55px 0 30px 0;
+    padding: 40px 0 20px 0;
 }
 
 #contacts .content .item .icon-layout i:before{
@@ -1001,7 +1009,7 @@ button.read-more {
 
 #contacts .content .item .icon-info p {
     font-family: 'Raleway-Regular';
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
     color: #000000;
 }
@@ -1011,7 +1019,7 @@ button.read-more {
 }
 
 #contacts .content .title-wraper {
-    clear: both;
+    padding: 90px 0 0 0;
 }
 #contacts .content .title-wraper .title {
     position: relative;
@@ -1019,7 +1027,8 @@ button.read-more {
     font-family: 'Raleway-Regular';
     font-size: 34px;
     line-height: 41px;
-
+    text-transform: uppercase;
+    padding: 3px 20px;
 }
 
 #contacts .content .title-wraper .title .decorator.pre-icon:before {
@@ -1032,4 +1041,46 @@ button.read-more {
 
 #contacts .content .title-wraper .title .decorator.post-icon:after {
     background-color: #888888;
+}
+
+#contacts .content .social {
+    margin: 50px 0 80px 0;
+}
+
+#contacts .content .social ul {
+    list-style-type: none;
+}
+
+#contacts .content .social ul li {
+    display: inline-block;
+    margin:0 2px 0 2px;
+}
+
+#contacts .content .social ul li .icon-wrapper {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: #ffc908;
+    position: relative;
+}
+
+#contacts .content .social ul li .icon-wrapper i {
+    font-size: 24px;
+    line-height: 22px;
+    color: white;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+
+}
+
+footer {
+    padding: 45px 40px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+}
+
+footer p {
 }
