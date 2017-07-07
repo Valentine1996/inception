@@ -16,7 +16,18 @@ $(document).ready(function(){
             items: 1
         });
 
+        //Map for google map
         var map;
+
+        var header = $("header");
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 800) {
+                header.addClass('fixed');
+            } else {
+                header.removeClass('fixed');
+            }
+        });
     }
 );
 
