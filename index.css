@@ -302,17 +302,6 @@ body {
      background-color: #ffc908;
  }
 
-#singleImageCarousel .slider-button {
-    font-family: 'Raleway-Medium';
-    line-height: 19px;
-    margin: 45px 0 0 0;
-    padding: 15px 25px;
-    font-weight: 500;
-    background-color: #ffc908;
-    border: none;
-    font-size: 16px;
-}
-
 .welcome {
     color: white;
     position: absolute;
@@ -323,6 +312,17 @@ body {
     display: block;
     max-width: 860px;
     text-align: center;
+}
+
+.welcome .slider-button {
+    font-family: 'Raleway-Medium';
+    line-height: 19px;
+    margin: 45px 0 0 0;
+    padding: 15px 25px;
+    font-weight: 500;
+    background-color: #ffc908;
+    border: none;
+    font-size: 16px;
 }
 
 .welcome h3 {
@@ -864,6 +864,7 @@ button.read-more {
     display: block;
     margin: 0 auto;
     max-width: 1600px;
+    overflow: auto;
 }
 
 .gallery-wrappper .custom-row {
@@ -886,7 +887,7 @@ button.read-more {
 
 .gallery-wrappper .custom-row .custom-col .item .hover-content {
     position: absolute;
-    bottom: -100px;
+    bottom: -200px;
     left: 10px;
     right: 10px;
     background-color: #ffc908;
@@ -1115,5 +1116,176 @@ footer p {
 
 /*--- Media --*/
 @media screen and (max-width: 1200px){
+    /*--- Main Slider --*/
+    .welcome {
+        top: 150px;
+    }
 
+    /*--- Login form --*/
+
+    /*--- NAVIGATION --*/
+
+    /*--- Forth image carousel --*/
+
+    /*--- SECTION: ABOUT ---*/
+
+    /*--- SECTION: ACTIONS ---*/
+
+
+    #actions #search-forum .inner-content {
+        margin: 40px auto 0 auto;
+        width: 500px;
+    }
+
+    /*--- SECTION: AIM --*/
+
+    /*--- SECTION: feedbacks --*/
+
+    /*--- SECTION: categories --*/
+
+    /*--- SECTION: upcoming --*/
+
+    /*--- SECTION: customers --*/
+
+    #customers .content ul li#tuts {
+        margin-top: 20px;
+    }
+
+    /*--- SECTION: extra-information --*/
+
+    /*--- SECTION: map --*/
+
+    /*--- SECTION: contacts --*/
+}
+
+@media screen and (max-width: 992px){
+    /*--- Main Slider --*/
+    .welcome {
+        top: 110px;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .welcome h3 {
+        display: inline-block;
+        position: relative;
+        font-family: "Raleway-Regular";
+        font-size: 18px;
+        line-height: 18px;
+        padding: 13px 30px;
+    }
+
+    .welcome h2 {
+        margin: 10px 0 0 0;
+        font-family: "Raleway-Light";
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .welcome h1 {
+        font-family: "Raleway-Light";
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 25px;
+    }
+
+    .welcome .slider-button {
+        margin: 25px 0 0 0;
+    }
+
+    #singleImageCarousel .owl-dots {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    /*--- Login form --*/
+
+    /*--- NAVIGATION --*/
+
+    /*--- Forth image carousel --*/
+
+    /*--- SECTION: ABOUT ---*/
+
+    /*--- SECTION: ACTIONS ---*/
+
+    #actions .wrapper {
+        max-width: 450px;
+        margin: auto;
+    }
+
+
+    #actions #search-forum .inner-content {
+        margin: 40px auto 0 auto;
+        width: 500px;
+    }
+
+    /*--- SECTION: AIM --*/
+
+    /*--- SECTION: feedbacks --*/
+
+    /*--- SECTION: categories --*/
+
+    .gallery-wrappper {
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        overflow: auto;
+    }
+
+    .gallery-wrappper .custom-row .custom-col {
+        width: 50%;
+    }
+
+    /*--- SECTION: upcoming --*/
+
+    #upcoming {
+
+    }
+    #upcoming .content .row .content {
+        padding: 60px 0 0 0;
+    }
+
+    #upcoming .content .row .content .image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #upcoming .content .row .content .image img {
+        float: none;
+    }
+
+
+    #upcoming .content .row .content .description .button-wrapper {
+        text-align: center;
+    }
+
+    /*--- SECTION: customers --*/
+
+    #customers .content ul li#tuts {
+        margin-top: 20px;
+    }
+
+    /*--- SECTION: extra-information --*/
+
+    /*--- SECTION: map --*/
+
+    /*--- SECTION: contacts --*/
+
+    #contacts {
+        padding: 40px 0 40px 0;
+    }
+
+    #contacts .content .item {
+        text-align: center;
+        border-top: 1px solid #eeeeee;
+    }
+
+    #contacts .content .item-left {
+        margin: 0 0 0 0;
+    }
+
+    #contacts .content .item-right {
+        margin: 0 0 0 0;
+    }
 }
